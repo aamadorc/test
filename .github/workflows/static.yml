@@ -51,6 +51,8 @@ jobs:
           #npm install @jamesives/github-pages-deploy-action@4.4.3
           #npm run build
           echo no
+          mkdir build
+          echo "# Built file\n## contents\n\nGoes here" > build/README.md
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
