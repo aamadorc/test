@@ -41,9 +41,9 @@ jobs:
 #      - name: Deploy to GitHub Pages
 #        id: deployment
 #        uses: actions/deploy-pages@v2
-#      - uses: actions/setup-node@v1
-#        with:
-#          node-version: '12.18.4'
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
       - name: Install and Build 🔧
         run: |
           npm ci
