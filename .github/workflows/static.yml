@@ -46,8 +46,9 @@ jobs:
           node-version: 18
       - name: Install and Build 🔧
         run: |
-          find . -ls
-          npm ci
+          #find . -ls
+          #npm ci
+          npm install @jamesives/github-pages-deploy-action@4.4.3
           npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
