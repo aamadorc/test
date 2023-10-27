@@ -44,7 +44,7 @@ jobs:
           #npm run build
           echo no
           mkdir build
-          echo "# Built file\n## contents\n\nGoes here" > build/README.md
+          echo -e "# Built file\n## contents\n\nGoes here" > build/index.html
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
-          path: '.'
+          path: build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
