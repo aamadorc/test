@@ -47,7 +47,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           find . -ls
-          npm ci
+          npm install #ci
           npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
