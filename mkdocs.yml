@@ -1,0 +1,41 @@
+# site info
+site_name: CAPSTONE Project
+site_url: https://aamadorc.github.io/
+site_author: Angela Amador
+site_description: CAPSTONE Project
+
+# site theme
+theme:
+  name: material
+  palette:
+    primary:  blue
+    accent: black
+  plugins:
+    - search:
+      lang: en
+  features:
+    - navigation.footer
+    - content.code.copy
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+# add repository
+repo_url: http://aamadorc.github.io
+repo_name: aamadorc/CIND820
+
+# copyright
+copyright: PACKAGE NAME &copy; 2023 YOUR NAME
+
+# social links
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    link: https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg
+  - icon: fontawesome/brands/medium
+    link: https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/medium.svg
+  - icon: fontawesome/brands/linkedin
+    link: https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg
+  - icon: fontawesome/brands/instagram
+    link: https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg
+  - icon: fontawesome/brands/twitter
+    link: https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg
