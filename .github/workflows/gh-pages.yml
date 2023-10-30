@@ -52,6 +52,8 @@ jobs:
           mkdir docs 2>/dev/null || true
           python generate-extra-docs.py > docs/changes.md
           mkdocs build
+          cd site
+          tar zcf tarball.tar.gz .
 
       #- name: Generate documents 🔧
       #  run: |

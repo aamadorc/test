@@ -44,7 +44,7 @@ print("|:---:|:---:|:---:|")
 
 for c in commits:
     row = f"| [{c[2]}]({REPO_URL_BASE}/commit/{c[0]}) |"
-    row += f"[{c[2]}]({REPO_URL_BASE}/commit/{c[1]}) |"
+    row += f"[{c[2]}]({REPO_URL_BASE}/commit/{c[0]}) |"
     links = []
     for f in files_report:
         if f in c[3]:
