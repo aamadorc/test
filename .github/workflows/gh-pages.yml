@@ -52,7 +52,7 @@ jobs:
           mkdir docs 2>/dev/null || true
           python generate-extra-docs.py > docs/changes.md
           mkdocs build
-          cd site
+          #cd site
           tar zcf tarball.tar.gz --exclude tarball.tar.gz . || true
 
       #- name: Generate documents 🔧
