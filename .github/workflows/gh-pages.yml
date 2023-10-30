@@ -32,6 +32,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: false
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
@@ -51,6 +54,7 @@ jobs:
           pip install -r requirements-docs.txt
           mkdir docs 2>/dev/null || true
           python generate-extra-docs.py > docs/changes.md
+          cd docs; ln ../docs/README.md; cd -
           mkdocs build
           #cd site
           tar zcf tarball.tar.gz --exclude tarball.tar.gz . || true
