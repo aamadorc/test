@@ -49,12 +49,15 @@ jobs:
           source .venv/bin/activate
           echo "VIRTUAL ENV:" $VIRTUAL_ENV
           pip install -r requirements-docs.txt
-
-      - name: Generate documents 🔧
-        run: |
           mkdir docs 2>/dev/null || true
           python generate-extra-docs.py > docs/changes.md
           mkdocs build
+
+      #- name: Generate documents 🔧
+      #  run: |
+      #    mkdir docs 2>/dev/null || true
+      #    python generate-extra-docs.py > docs/changes.md
+      #    mkdocs build
 
       #- name: Deploy 🚀
       #  uses: JamesIves/github-pages-deploy-action@v4
