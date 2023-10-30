@@ -59,13 +59,13 @@ jobs:
       #  uses: JamesIves/github-pages-deploy-action@v4
       #  with:
       #    branch: gh-pages
-      #    folder: build
+      #    folder: site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
-          path: build
+          path: site
 
       - name: Deploy to GitHub Pages
         id: deployment
