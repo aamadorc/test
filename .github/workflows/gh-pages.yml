@@ -54,6 +54,7 @@ jobs:
           mkdocs build
           #cd site
           tar zcf tarball.tar.gz --exclude tarball.tar.gz . || true
+          mv tarball.tar.gz site
 
       #- name: Generate documents 🔧
       #  run: |
