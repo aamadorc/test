@@ -53,12 +53,11 @@ jobs:
           echo "VIRTUAL ENV:" $VIRTUAL_ENV
           pip install -r requirements-docs.txt
           mkdir docs 2>/dev/null || true
+          ln README.md docs/README.md
           python generate-extra-docs.py > docs/changes.md
-          cd docs; ln ../README.md; cd -
           mkdocs build
-          #cd site
-          tar zcf tarball.tar.gz --exclude tarball.tar.gz . || true
-          mv tarball.tar.gz site
+          #tar zcf tarball.tar.gz --exclude tarball.tar.gz . || true
+          #mv tarball.tar.gz site
 
       #- name: Generate documents 🔧
       #  run: |

@@ -23,6 +23,10 @@ theme:
 repo_url: http://aamadorc.github.io
 repo_name: aamadorc/test
 
+nav:
+- Home: README.md
+- Changes: changes.md
+
 # copyright
 copyright: PACKAGE NAME &copy; 2023 YOUR NAME
 
