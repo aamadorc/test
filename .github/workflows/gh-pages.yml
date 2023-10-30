@@ -54,7 +54,7 @@ jobs:
           pip install -r requirements-docs.txt
           mkdir docs 2>/dev/null || true
           python generate-extra-docs.py > docs/changes.md
-          cd docs; ln ../docs/README.md; cd -
+          cd docs; ln ../README.md; cd -
           mkdocs build
           #cd site
           tar zcf tarball.tar.gz --exclude tarball.tar.gz . || true
